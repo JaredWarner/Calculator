@@ -1,0 +1,4 @@
+.calcForm {
+  display: flex;
+  flex-direction: column;
+}

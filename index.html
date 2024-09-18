@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <main>
+      <form class="calcForm" action="/submit">
+        <label for="firstNumber">First Number: </label>
+        <input
+          type="text"
+          id="firstNumber"
+          name="firstNumberInputField"
+          placeholder="Please enter a number"
+        />
+        <label for="secondNumber">Second Number: </label>
+        <input
+          type="text"
+          id="secondNumber"
+          name="secondNumberInputField"
+          placeholder="Please enter a number"
+        />
+        <label for="addition">Addition</label>
+        <input type="checkbox" id="addition" name="additionCheckBox" />
+
+        <label for="subtraction">Subtraction</label>
+        <input type="checkbox" id="subtraction" name="subtractionCheckBox" />
+
+        <label for="multiplication">Multiplication</label>
+        <input
+          type="checkbox"
+          id="multiplication"
+          name="multiplicationCheckBox"
+        />
+
+        <label for="division">Division</label>
+        <input type="checkbox" id="division" name="divisionCheckBox" />
+
+        <button type="equals">Equals</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>
