@@ -7,5 +7,8 @@ function calculator(num1, num2, op) {
     multiplication: a * b,
     division: a / b,
   };
+
   return operations[op];
 }
+
+console.log(calculator(10, 5, "addition"));
