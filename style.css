@@ -1,4 +1,10 @@
-.calcForm {
+h1 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

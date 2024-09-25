@@ -11,7 +11,7 @@
       <h1>Calculator</h1>
     </header>
     <main>
-      <form class="calcForm" action="/submit">
+      <form>
         <label for="firstNumber">First Number: </label>
         <input
           type="text"
@@ -26,25 +26,22 @@
           name="secondNumberInputField"
           placeholder="Please enter a number"
         />
-        <label for="addition">Addition</label>
-        <input type="checkbox" id="addition" name="additionCheckBox" />
 
-        <label for="subtraction">Subtraction</label>
-        <input type="checkbox" id="subtraction" name="subtractionCheckBox" />
+        <label for="operation">Operation:</label>
+        <select id="operation">
+          <option value="addition">Addition</option>
+          <option value="subtraction">Subtraction</option>
+          <option value="multiplication">Multiplication</option>
+          <option value="division">Division</option>
+        </select>
 
-        <label for="multiplication">Multiplication</label>
-        <input
-          type="checkbox"
-          id="multiplication"
-          name="multiplicationCheckBox"
-        />
-
-        <label for="division">Division</label>
-        <input type="checkbox" id="division" name="divisionCheckBox" />
-
-        <button type="equals">Equals</button>
+        <button type="button" id="equalsButton">Equals</button>
         <button type="reset">Reset</button>
       </form>
+
+      <p id="result"></p>
     </main>
+
+    <script src="calculator.js"></script>
   </body>
 </html>
