@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <main>
+      <form>
+        <label for="firstNumber">First Number: </label>
+        <input
+          type="text"
+          id="firstNumber"
+          name="firstNumberInputField"
+          placeholder="Please enter a number"
+        />
+        <label for="secondNumber">Second Number: </label>
+        <input
+          type="text"
+          id="secondNumber"
+          name="secondNumberInputField"
+          placeholder="Please enter a number"
+        />
+
+        <label for="operation">Operation:</label>
+        <select id="operation">
+          <option value="addition">Addition</option>
+          <option value="subtraction">Subtraction</option>
+          <option value="multiplication">Multiplication</option>
+          <option value="division">Division</option>
+        </select>
+
+        <button type="button" id="equalsButton">Equals</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <p id="result"></p>
+    </main>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
